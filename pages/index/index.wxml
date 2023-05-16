@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="weui-cells weui-cells_after-title">
+    <checkbox-group bind:change="checkboxChange">
+      <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="id">
+        <view class="weui-cell__hd">
+          <checkbox value="{{item.id}}" checked="{{item.checked}}" />
+          {{item.content}}
+        </view>
+        <!-- <view class="weui-cell__bd" >
+          {{item.content}}
+        </view> -->
+      </label>
+    </checkbox-group>
+  </view>
+</view>
